@@ -174,12 +174,23 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Entity\Bunch.cs" />
-    <Compile Include="Models\Entity\Course.cs" />
-    <Compile Include="Models\Entity\Faculty.cs" />
-    <Compile Include="Models\Entity\University.cs" />
+    <Compile Include="Models\Entity\Content\ErrorMessage.cs" />
+    <Compile Include="Models\Entity\Content\Language.cs" />
+    <Compile Include="Models\Entity\Content\MenuItem.cs" />
+    <Compile Include="Models\Entity\Content\Picture.cs" />
+    <Compile Include="Models\Entity\Content\PostText.cs" />
+    <Compile Include="Models\Entity\Content\Weekday.cs" />
+    <Compile Include="Models\Entity\Schedule\Bunch.cs" />
+    <Compile Include="Models\Entity\Schedule\Course.cs" />
+    <Compile Include="Models\Entity\Schedule\Faculty.cs" />
+    <Compile Include="Models\Entity\Schedule\Lesson.cs" />
+    <Compile Include="Models\Entity\Schedule\LessonItem.cs" />
+    <Compile Include="Models\Entity\Schedule\University.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="OtherContent\Enums\MenuType.cs" />
+    <Compile Include="OtherContent\Enums\Numerator.cs" />
+    <Compile Include="OtherContent\Enums\Weekdays.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

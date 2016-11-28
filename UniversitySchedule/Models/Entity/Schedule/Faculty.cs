@@ -13,9 +13,9 @@ namespace UniversitySchedule.Models.Entity
         public int ID { get; set; }
 
         [Required, MaxLength(20)]
-        public string facultyName { get; set; }
+        public string FacultyName { get; set; }
 
-        public int? universityId { get; set; }
+        public int? UniversityId { get; set; }
 
         [ForeignKey("universityId")]
         public virtual University university {get;set;}

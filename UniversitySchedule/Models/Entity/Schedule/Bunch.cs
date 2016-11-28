@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using UniversitySchedule.Models.Entity.Schedule;
 
 namespace UniversitySchedule.Models.Entity
 {
@@ -24,5 +25,12 @@ namespace UniversitySchedule.Models.Entity
 
         [ForeignKey("courseId")]
         public virtual Course course { get; set; }
+
+        public ICollection<Lesson> lessons { get; set; }
+
+        public Bunch()
+        {
+            lessons = new List<Lesson>();
+        }
     }
 }
